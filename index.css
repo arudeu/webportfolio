@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Source Code Pro", monospace;
+}
+body{
+    overflow-x: hidden;
+}
+#navbar{
+    height: 100vh !important;
+    z-index: 10;
+}
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+}
+#navbar a:hover{
+    text-decoration: underline;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+#navbar li{
+    margin: 20px auto;
+}
+#landing{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(270deg, #00b9c1, #f200e1);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    animation: GradientAnimation 40s ease infinite;
+}
+#landing h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: #fff;
+    font-size: 19rem;
+    text-shadow: #adadad 0.5rem 0.5rem;
+}
+#landing h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #fff;
+    font-size: 19rem;
+}
+@keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.no-padding{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#details,#projects,#contact{
+    background-color: #333;
+    color: #fff;
+}
+#details h2, #projects h1, #tools h1, #contact h2{
+    font-size: 4rem;
+}
+#details p{
+    font-size: 2rem;
+}
+#details li{
+    font-size: 20px;
+}
+span{
+    color:#e0218a;
+}
+.card{
+    border: none;
+}
+#datu{
+    background: linear-gradient(rgba(0,0,0,1), rgba(224, 33, 138,0.5)),url("./images/datu.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#techknow{
+    background: linear-gradient(rgba(0,0,0,1), rgba(224, 33, 138,0.5)),url("./images/techknow.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#dag{
+    background: linear-gradient(rgba(0,0,0,1), rgba(224, 33, 138,0.5)),url("./images/dag.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card p{
+    font-size: 1.3rem;
+}
+#tools{
+    width: 100vw;
+
+    background: linear-gradient(270deg, #00b9c1, #f200e1);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    animation: GradientAnimation 40s ease infinite;
+}
+#tools img{
+    width: 100px;
+}
+#tools h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: #fff;
+}
+#socials {
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(224, 33, 138,0.5)), url("./images/socials.jpg");
+    background-size: cover;
+}
+#socials svg{
+    transform: scale(0.5);
+}
+#contact button{
+    background-color: #e0218a;
+    color: #fff;
+}
+@media only screen and (max-width: 1670px) {
+    #landing h1{
+        font-size: 12rem;
+    }
+}
+@media only screen and (max-width: 1183px) {
+    #landing h1{
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #navbar a{
+        font-size: 20px;
+    }
+    #navbar li{
+        margin: 10px auto;
+    }
+    #details h2, #projects h1{
+        font-size: 2rem;
+    }
+    #details p{
+        font-size: 1rem;
+    }
+}
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
