@@ -93,6 +93,12 @@ span{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#estilo{
+    background: linear-gradient(rgba(0,0,0,1), rgba(224, 33, 138,0.5)),url("./images/estilo.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .card p{
     font-size: 1.3rem;
 }
